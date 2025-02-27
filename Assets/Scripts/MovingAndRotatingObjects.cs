@@ -10,15 +10,12 @@ public class MovingAndRotatingObjects : MonoBehaviour
     [Header("Default Rotating Fortnite Skin And Speed")]
     public float rotateSpeed = 50f;
     // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
         transform.Translate(0, moveSpeed * Time.deltaTime, 0);
-        transform.Rotate * Time.deltaTime, 0);
+        transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
     }
 }
+
